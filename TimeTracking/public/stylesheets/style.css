@@ -1,0 +1,132 @@
+
+:root {
+  /* Colors  Primary */
+--Blue : hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+
+/* Colors  Neutral */
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+/*Typography
+- Font size: 18px (card titles e.g. Work, Play)
+*/
+
+*{
+  font-family: rubik;
+}
+
+body {
+background-color: var(--Very-dark-blue); 
+display: flex;
+margin: 200px;
+}
+
+section{
+  /*display: flex;
+  justify-content: space-evenly;*/
+  width: 200px;
+}
+
+.perfil{
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.session-perfil-encabezado{
+  background-color: var(--Blue);
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+}
+
+.session-perfil-encabezado img{
+  width: 40%;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.session-perfil-descripcion{
+  color: white;
+  padding: 10px 25px 15px 25px;
+}
+
+/*Letter*/
+
+.Letter-small-descripcion{
+  color: var(--Pale-Blue);
+  font-size: 10px;
+  margin: 0px;
+  padding-top: 25px;
+}
+
+.Letter-big{
+  margin: 0px;
+  font-size: 25px;
+  color: var(--Pale-Blue);
+  padding-bottom: 25px;
+}
+
+.Letter-small{
+  font-size: 10px;
+  color: var(--Desaturated-blue);
+}
+
+/* Actividades */
+
+.actividades{
+  background-color: var(--Light-red-work);
+  border-radius: 11px; 
+  padding-top: 30px;
+}
+
+.actividades-cuerpo{
+  background-color: var(--Dark-blue);
+  border-radius: 10px;
+  padding: 0px 25px 15px 25px;
+}
+
+.actividad{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Letter-hora{
+  margin: 0px;
+  font-size: 30px;
+  color: white;
+}
+
+.Letter-lastWeek{
+  color: var(--Pale-Blue);
+  font-size: 10px;
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+}
+
+.seccion-daily{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.seccion-daily section{
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+  
+  
+}
