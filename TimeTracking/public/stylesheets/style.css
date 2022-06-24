@@ -27,14 +27,10 @@
 body {
 background-color: var(--Very-dark-blue); 
 display: flex;
-margin: 200px;
+margin: 150px 200px 100px 200px;
 }
 
-section{
-  /*display: flex;
-  justify-content: space-evenly;*/
-  width: 200px;
-}
+
 
 .perfil{
     background-color: var(--Dark-blue);
@@ -46,7 +42,7 @@ section{
   background-color: var(--Blue);
   border-radius: 10px;
   color: white;
-  padding: 25px;
+  padding: 25px 25px 14px 25px;
 }
 
 .session-perfil-encabezado img{
@@ -58,6 +54,11 @@ section{
 .session-perfil-descripcion{
   color: white;
   padding: 10px 25px 15px 25px;
+}
+
+.session-perfil-descripcion p:hover{
+  color: white;
+  font-size: 13px
 }
 
 /*Letter*/
@@ -83,17 +84,18 @@ section{
 
 /* Actividades */
 
-.actividades{
-  background-color: var(--Light-red-work);
-  border-radius: 11px; 
-  padding-top: 30px;
+.actividades iframe{
+  position: absolute;
+  top: 152px;
 }
 
 .actividades-cuerpo{
   background-color: var(--Dark-blue);
   border-radius: 10px;
   padding: 0px 25px 15px 25px;
+  position: relative;
 }
+
 
 .actividad{
   color: white;
@@ -118,15 +120,159 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
+  width: 100%;   /**/
 }
+
+.actividades-cuerpo:hover{
+  background-color: var(--Desaturated-blue);
+}
+
 
 .seccion-daily section{
   margin-bottom: 20px;
+  margin-left: 5px;
 }
 
 
-@media only screen and (max-width: 768px){
-  
-  
+/**/
+.actividades{
+  background-color: var(--Light-red-work);
+  background-image: url('/images/icon-work.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+.actividades2{
+  background-color: var(--Soft-blue-play);
+  background-image: url('/images/icon-play.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+.actividades3{
+  background-color: var(--Light-red-study);
+  background-image: url('/images/icon-study.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+.actividades4{
+  background-color: var(--Lime-green-exercise);
+  background-image: url('/images/icon-exercise.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+.actividades5{
+  background-color: var(--Violet-social);
+  background-image: url('/images/icon-social.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+.actividades6{
+  background-color: var(--Soft-orange-self-care);
+  background-image: url('/images/icon-self-care.svg');
+  background-repeat: no-repeat, repeat;
+  border-radius: 11px; 
+  padding-top: 30px;
+  width: 180px;
+}
+
+@media only screen and (max-width: 582px){
+
+    body{
+      display: block;
+      margin: 50px 70px 0px 70px;
+    }
+
+    .session-perfil-encabezado{
+      display: flex;
+    }
+
+    .session-perfil-encabezado img {
+      border: 0px;
+      height: 60px;      
+      padding-top: 10px;
+      position: relative;
+      width: 60px;
+    }
+
+    .Letter-small-descripcion{
+        font-size: 12px;
+    }
+
+    .Letter-big{
+      font-size: 17px;
+    }
+
+    .perfil-descripcion{
+      margin-left: 15px;
+    }
+
+    .session-perfil-descripcion{
+      display: flex;
+      justify-content: space-between;
+      padding: 18px;
+    }
+
+    .Letter-small{
+      font-size: 15px;
+      margin: 0px;
+    }
+
+
+    .seccion-daily{      
+      display: block;
+      margin-top: 20px;
+    }
+
+    .seccion-daily section{
+      margin-left: 0px;
+    }
+
+    .actividades{
+      width: 100%;
+    }
+
+    .actividades2{
+      width: 100%;
+    }
+
+    .actividades3{
+      width: 100%;
+    }
+
+    .actividades4{
+      width: 100%;
+    }
+
+    .actividades5{
+      width: 100%;
+    }
+
+    .actividades6{
+      width: 100%;
+    }
+
+    .descripcion-hora{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .Letter-lastWeek{
+      display: flex;
+      align-items: center;
+    }
+
 }

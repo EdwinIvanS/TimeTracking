@@ -1,0 +1,17 @@
+<% for (let i = 0; i < data.length; i++) { %> 
+    <div class="actividades"> 
+      <iframe src="/images/icon-work.svg" frameborder="0" width="80px" height="80px"></iframe>
+      <div class="actividades-cuerpo">
+        <div class="actividades-encabezado">
+          <div class="actividad">
+              <p><%= data[i].title %></p>
+              <p>...</p>
+          </div>
+          <div class="descripcion-hora">
+              <p class="Letter-hora"><%= data[i].current %>hrs</p>
+              <p class="Letter-lastWeek">Last Week - <%= data[i].previous %>hrs</p>
+          </div>
+        </div>    
+      </div>          
+    </div>
+<% } %> 
